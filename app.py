@@ -15,7 +15,7 @@ st.set_page_config(
     layout="centered",
 )
 # Configure Gemini AI model with the provided API key
-API_KEY = "AIzaSyBsj1V-Z7ojsLVFp3C0Bt2dK_gWU3wJFmI"
+API_KEY = "________"
 genai.configure(api_key=API_KEY)
 # Function to get response from Gemini AI
 def get_gemini_response(input, max_retries=10):
@@ -79,7 +79,7 @@ I want the response in one single string having the structure
 """
 ## Streamlit app
 st.title("Resume Matcher ATS")
-st.markdown("Tessolve Semicondutors(https://www.tessolve.com)")
+st.markdown("ANY NAME HERE(FULL WEBISTE LINK)")
 jd = st.text_area("Paste the Job Description")
 uploaded_files = st.file_uploader("Upload Your Resumes", type="pdf", accept_multiple_files=True, help="Please upload PDFs")
 submit = st.button("Submit")
